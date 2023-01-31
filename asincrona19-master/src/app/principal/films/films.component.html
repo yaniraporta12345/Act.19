@@ -1,0 +1,22 @@
+<section class="container">
+    <section class="d-flex flex-wrap">
+        <section *ngFor="let item of listado; let i = index" class="card m-3 " style="width: 30%">
+            <section [ngStyle]="{'background': 'linear-gradient(990deg, ' + gradients[generateRandom()][0] + ' 43%, ' + gradients[generateRandom()][1] + ' 90%)'}" class="card-title" style="height: 70px">
+
+                <h3 class="text-center text-white"> {{item.name}}</h3>
+                
+            </section>
+                <section class="card-body">
+                <section class="card-text">
+                    {{item.body}}
+                </section>
+                <section class="card-text">
+                    {{item.body}}
+                </section>
+                <section class="card-text">
+                    {{item.body}}
+                </section>
+            </section>
+        </section>
+    </section>
+</section>
